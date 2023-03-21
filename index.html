@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html> 
+    <head >
+         <title > CYGNUS HOTELS </title> 
+         <link rel="stylesheet" type="text/css" href="css_second/style.css">
+         <link rel="stylesheet" type="text/css" href="css_second/ionicons.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap" rel="stylesheet">
+      </head>
+      <body>
+      <div class = "main-header">
+      <div class = "header">
+      <h1> CYGNUS GROUP </h1>
+      <img src = "images/logo.jpg" class="logo">
+      <div class = "navigation">
+          <ul>
+      <li><a href = "index.html" class = "active"> Home </a></li>
+      <li><a href="Hotel.html">Hotel</a></li>
+      <li><a href="attraction.html">Experience</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="Form.html">Bookings</a></li>
+      <li><a href="login.html">Login</a></li>
+      </ul>
+      </div>
+      </div>
+
+      <div class = "main-content-header">
+        
+      <div class = "slider">
+        <h2> Live Your <span> MOMENTS </span></h2>
+      <div class = "slides">
+      <!--radio slider start-->
+      <input type = "radio" name = "radio-btn" id = "radio1">
+      <input type = "radio" name = "radio-btn" id = "radio2">
+      <input type = "radio" name = "radio-btn" id = "radio3">
+      <input type = "radio" name = "radio-btn" id = "radio4">
+      <input type = "radio" name = "radio-btn" id = "radio5">
+      <!--radio slider end-->
+      <!--slides images start-->
+      <div class = "slide first">
+      <img src = "images/1.jpg" alt = "">
+      </div>
+      <div class = "slide">
+      <img src = "images/2.jpg" alt = "">
+      </div>
+      <div class = "slide">
+      <img src = "images/3.jpg" alt = "">
+      </div>
+      <div class = "slide">
+      <img src = "images/4.jpg" alt = "">
+      </div>
+      <div class = "slide">
+      <img src = "images/5.jpg" alt = "">
+      </div>
+      <!--slides images end-->
+      <!--automatic nav start-->
+      <div class = "navigation-auto">
+      <div class = "auto-btn1"></div>
+      <div class = "auto-btn2"></div>
+      <div class = "auto-btn3"></div>
+      <div class = "auto-btn4"></div>
+      <div class = "auto-btn5"></div>
+      </div>
+      <!--automatic nav end-->
+      </div>
+      </div>
+      <!--manual navigation start-->
+      <div class = "navigation-manual">
+         <label for = "radio1" class = "manual-btn"></label>
+         <label for = "radio2" class = "manual-btn"></label>
+         <label for = "radio3" class = "manual-btn"></label> 
+         <label for = "radio4" class = "manual-btn"></label>
+         <label for = "radio5" class = "manual-btn"></label>
+       </div>
+       <!--manual navigation end-->
+       </div>
+       </div>
+       
+       <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+       <!-- BOOKING -->
+
+       <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+
+<!-- SERVICE-->
+  <section class="service">
+    <h1>Our Services</h1>
+
+    <video autoplay loop class="video-background" muted plays-inline>
+        <source src="images/video.mp4" type="video/mp4"> 
+    </video>
+
+    <div class="welcome-msg">
+        <h1> About Cygnus Hotels </h1>
+        <p>
+            Cygnus Hotels, is an Indian hospitality chain of leased and franchised hotels, homes and living spaces. 
+             Cygnus initially consisted mainly of budget hotels. The startup expanded 
+            globally with thousands of hotels, vacation homes and millions of rooms in India, Malaysia, UAE, Nepal, China, 
+            Brazil, Mexico, UK, Philippines, Japan, Saudi Arabia, Sri Lanka, Indonesia, Vietnam, the United States and more.
+            
+Nestled beside an 18-hole golf course minutes from the slopes, Hotel Park City is consistently acclaimed among the best hotels 
+in Park City, Utah. Among our most recent accolades, our AAA Four Diamond resort has proudly been rated a “Top Ski Hotel” by Conde
+Nast Traveler, and our Ruth’s Chris Steak House is the #1 rated Ruth’s Chris Steak House in the western U.S. We’ve also been placed 
+in the Certificate of Excellence Hall of Fame by TripAdvisor and earned the Certificate of Excellence (TripAdvisor), a Platinum Choice 
+Award (Smart Meetings Magazine), recognition as a “Most Admired Company” (Utah Business Magazine) and more.
+        </p>
+      </div>
+    </section>
+
+<!-- FOOTER-->
+    <footer>
+        <div class="container grid1">
+          <div class="box">
+            <h3>Home</h3>
+            <ul>
+              <li>About us</li>
+              <li>Places</li>
+              <li>Services</li>
+              <li>Destination</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Practice Area</h3>
+            <ul>
+              <li>Travel</li>
+              <li>Popular places</li>
+              <li>Destination</li>
+              <li>Tour</li>
+              <li>Family Vacation</li>
+            </ul>
+          </div>
+          
+          <div class="box">
+            <h3>Contact</h3>
+            <ul>
+              <li>RajMahal road,near Old Plaza,Vadodara-47</li>
+              <li>+91012345678</li>
+              <li>+91123456789</li>
+              <li>thecygnushotels@gmail.com</li>
+            </ul>
+            <h3>Connect</h3>
+            <div class="icon">
+              <i class='fab fa-instagram '></i>
+              <i class='fab fa-facebook-f '></i>
+            <i class='fab fa-linkedin'></i>
+            <i class='fab fa-pinterest'></i>
+            <i class='fab fa-twitter'></i>
+            <i class='fab fa-dribbble'></i>
+          </div>
+        </div>
+      </footer>
+     </body>
+    </html>
+    

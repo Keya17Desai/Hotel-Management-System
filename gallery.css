@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.gallery {
+    position: relative;
+  }
+  .gallary img {
+    width: 270px;
+    height: 350px;
+  }
+  
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    top: 35% !important;
+    background: white !important;
+    transition: 0.5s;
+  }
+  
+  .owl-carousel .owl-prev {
+    left: 33px;
+  }
+  
+  .owl-carousel .owl-next {
+    right: 33px;
+  }
+  
+  .owl-carousel .owl-next:hover,
+  .owl-carousel .owl-prev:hover {
+    background: #C1B086 !important;
+  }
+  
